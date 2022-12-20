@@ -27,7 +27,6 @@ body {
 .header {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items:center;
 }
 .navbar_header {
@@ -90,25 +89,18 @@ main {
     justify-content: center;
 }
 .main_banner {
-    margin-top: 43px;
+    margin: 43px 22px 0 0;
     width: 1630px;
     height: 616px;
-    /* background-color: var(--light-img-color); */
     border-radius:15px;
     background: var(--light-img-color) url("./img/Mask\ Group.png") no-repeat right;
     display: flex;
     flex-direction: row;
     align-items:center;
-
-    /* background-image: url("./img/Mask\ Group.png");
-    background-repeat: no-repeat;
-    background-position: right; */
 }
 .main_banner_container {
     color: var(--black-text-color);
-    padding: 0 0 63px 100px;
-    /* padding-left: 100px;
-    padding-bottom: 63px; */
+    padding: 23px 0 63px 112px;
 }
 
 .main_banner_offer_header {
@@ -118,32 +110,89 @@ main {
     font-size: 64px;
     line-height: 80px;
     margin-top: 73px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .main_banner_offer_text {
-font-family: 'CeraPro';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 38px;
-padding-bottom: 54px;
+    font-family: 'CeraPro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    padding-bottom: 54px;
 }
 
 .main_banner_btn {
-width: 230px;
-height: 60px;
-left: 258px;
-top: 582px;
-background: var(--red-img-color);
-border: 1px solid var(--red-img-color);
-border-radius: 50px;
-color: white;
-font-family: 'CeraPro';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 23px;
-display: flex;
-align-items:center;
-justify-content: space-around;
+    width: 230px;
+    height: 60px;
+    background: var(--red-img-color);
+    border: 1px solid var(--red-img-color);
+    border-radius: 50px;
+    color: white;
+    font-family: 'CeraPro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0 30px 0 40px;
+}
+.main_banner_btn:hover {
+    cursor: pointer;
+    transform: scale(1.07);
+    transition: all 1s;
+}
+.dash_container {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top:289px;
+    left: 276px;
+
+}
+.dash_gray {
+    width: 7px;
+    height: 7px;
+    background-color:var(--gray-text-color);
+    border-radius:100%;
+}
+.dash_gray:hover {
+    cursor: pointer;
+    transform: scale(2);
+    transition: all 1s;
+}
+.dash_dark {
+    width: 7px;
+    height: 7px;
+    background-color:var(--black-text-color);
+    border-radius:100%
+}
+.dash_dark:hover {
+    cursor: pointer;
+    transform: scale(2);
+    transition: all 1s;
+}
+.sidebar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 630px;
+    justify-content: space-around;
+    font-family: 'CeraPro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    align-items:center;
+    left:1103px;
+    top:25px;
+}
+.rotate_text {
+    transform: rotate(90deg);
+}
+.sidebar > li > a {
+    text-decoration: none;
+    color: var(--black-text-color);
 }
