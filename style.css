@@ -28,6 +28,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items:center;
+    margin-bottom: 114px;
 }
 .navbar_header {
     width: 100vw;
@@ -87,6 +88,8 @@ li {
 main {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items:center;
 }
 .main_banner {
     margin: 43px 22px 0 0;
@@ -157,6 +160,7 @@ main {
     height: 7px;
     background-color:var(--gray-text-color);
     border-radius:100%;
+    border:none;
 }
 .dash_gray:hover {
     cursor: pointer;
@@ -167,15 +171,24 @@ main {
     width: 7px;
     height: 7px;
     background-color:var(--black-text-color);
-    border-radius:100%
+    border-radius:100%;
+    border:none;
 }
 .dash_dark:hover {
     cursor: pointer;
     transform: scale(2);
     transition: all 1s;
 }
-.sidebar {
+.sidebar_container {
     position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 756px;
+    left:1103px;
+    top:25px;
+}
+.sidebar {
     display: flex;
     flex-direction: column;
     height: 630px;
@@ -186,8 +199,6 @@ main {
     font-size: 18px;
     line-height: 23px;
     align-items:center;
-    left:1103px;
-    top:25px;
 }
 .rotate_text {
     transform: rotate(90deg);
@@ -195,4 +206,187 @@ main {
 .sidebar > li > a {
     text-decoration: none;
     color: var(--black-text-color);
+}
+.line_one {
+    position: absolute;
+    width: 1px;
+    height: 110px;
+    background-color:var(--gray-text-color);
+    right: 26px;
+    top:2px;
+}
+.line_two {
+    position: absolute;
+    width: 1px;
+    height: 110px;
+    background-color:var(--gray-text-color);
+    right: 26px;
+    top:175px
+}
+.line_three {
+    position: absolute;
+    width: 1px;
+    height: 110px;
+    background-color:var(--gray-text-color);
+    right: 26px;
+    top:327px
+}
+.line_four {
+    position: absolute;
+    width: 1px;
+    height: 110px;
+    background-color:var(--gray-text-color);
+    right: 26px;
+    top:488px
+}
+.compilation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 162px;
+}
+.compilation_carousel_container {
+    width: 1626px;
+    overflow: hidden;
+    display: flex;
+}
+.compilation_header {
+    padding: 0 0 42px 55px;
+    width: 100%;
+}
+.compilation_header > h2{
+    font-family: 'CeraPro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 45px;
+    color: var(--black-text-color);
+}
+.slider-inner {
+    display: flex;
+    width: 1626px;
+}
+.slide {
+    margin-right: 25px;
+}
+.arrow {
+    background-color:white;
+    border:none;
+}
+.arrow>img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all .5s;
+}
+.carousel_wrapper {
+    display: flex;
+    width: 1755px;
+}
+.request {
+    width: 1626px;
+    height: 385px;
+    background: var(--light-img-color) url("./img/Mask\ Group_below.png") no-repeat right;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 68px 0 0 109px;
+}
+.request_header {
+    font-family: 'CeraPro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 45px;
+    color: var(--black-text-color);
+    margin-bottom: 37px;
+}
+.request-input {
+    width: 370px;
+    height: 59px;
+    border: solid 1px var(--gray-text-color);
+    border-radius: 32px;
+    margin-right: 17px;
+    font-family: 'CeraPro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: var(--light-img-color);
+    padding-left: 52px;
+    margin-bottom: 27px;
+}
+.request_input_cycle {
+ width: 6px;   
+ height: 6px;
+ background-color: var(--green-img-color);
+ border-radius:100%;
+ position: relative;
+ left: 38px;
+ top: 41px;
+}
+.request_input_cycle2 {
+    width: 6px;   
+    height: 6px;
+    background-color: var(--green-img-color);
+    border-radius:100%;
+    position: relative;
+    top: 34px;
+    left: 430px;
+}
+.request-checkbox_wrapper {
+    display: flex;
+    flex-direction: row;
+}
+.request-checkbox_container {
+    display: flex;
+    margin-right: 47px;
+}
+.request_checkbox_text {
+    width: 446px;
+    font-family: 'CeraPro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--dark-gray-text-color);
+    margin-left: 13px;
+}
+.green-mark {
+    text-decoration: underline;
+    color:var(--green-img-color);
+}
+input[type="checkbox"]  {
+    display: none;
+}
+input[type="checkbox"] + label span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: .5px var(--gray-text-color) solid;
+    border-radius:100%;
+    margin-top: 4px;
+}
+input[type="checkbox"]:checked + label span {
+    background:url(img/svg/checked.svg) 7px center no-repeat;
+}
+.request_btn {
+    width: 230px;
+    height: 60px;
+    background: var(--red-img-color);
+    border: 1px solid var(--red-img-color);
+    border-radius: 50px;
+    color: white;
+    font-family: 'CeraPro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0 22px 0 74px;
+}
+.request_btn:hover {
+    cursor: pointer;
+    transform: scale(1.07);
+    transition: all 1s;
 }
